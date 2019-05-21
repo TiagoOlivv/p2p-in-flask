@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, send_from_directory
 from werkzeug import secure_filename
+import socket
 import random
 import os
 import string
 
 app = Flask(__name__)
+hostname = socket.gethostname()
 UPLOAD_PATH = "UPLOADS"
 
 @app.route('/upload', methods = ['GET', 'POST'])
@@ -41,4 +43,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-   app.run(host='127.0.0.1')
+   app.run(debug = True, host = socket.gethostbyname(hostname),  port = 40000)
