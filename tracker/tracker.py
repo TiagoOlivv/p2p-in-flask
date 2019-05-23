@@ -3,7 +3,6 @@ from flask import Flask, request, redirect, url_for, send_from_directory
 from werkzeug import secure_filename
 import requests
 import socket
-import time
 
 hostname = socket.gethostname()
 UPLOAD_FOLDER = 'uploads'
@@ -17,11 +16,11 @@ def upload_file():
     filename = secure_filename(str(file))
     file.save(os.path.join(app.config[UPLOAD_FOLDER], filename[12:-5]))	
     
-    ips = open('ips.txt', 'r') 
-    for line in ips:
-        filee = open(UPLOAD_FOLDER+'/'+file.filename, 'rb')
-        requests.post(line, files = {'file':filee})
-        filee.close()
+    filee = open(UPLOAD_FOLDER+'/'+file.filename, 'rb')
+    
+    requests.post(url, files = {'file':filee})
+
+    filee.close()
 
     try:
     	os.remove(UPLOAD_FOLDER+'/'+file.filename)
