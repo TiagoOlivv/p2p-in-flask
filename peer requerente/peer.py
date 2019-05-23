@@ -9,7 +9,7 @@ import time
 
 app = Flask(__name__)
 hostname = socket.gethostname()
-UPLOAD_PATH = "UPLOADS"
+UPLOAD_PATH = "uploads"
 
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
