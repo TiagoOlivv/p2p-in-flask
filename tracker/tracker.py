@@ -1,13 +1,14 @@
 import os, json
 from flask import Flask, request, redirect, url_for, send_from_directory
 from werkzeug import secure_filename
-import time
 import requests
-UPLOAD_FOLDER = 'uploads'
+import socket
+import time
 
+hostname = socket.gethostname()
+UPLOAD_FOLDER = 'uploads'
 app = Flask(__name__)
 app.config['uploads'] = UPLOAD_FOLDER
-
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
@@ -16,11 +17,11 @@ def upload_file():
     filename = secure_filename(str(file))
     file.save(os.path.join(app.config[UPLOAD_FOLDER], filename[12:-5]))	
     
-    filee = open(UPLOAD_FOLDER+'/'+file.filename, 'rb')
-    
-    requests.post(url, files = {'file':filee})
-
-    filee.close()
+    ips = open('ips.txt', 'r') 
+    for line in ips:
+        filee = open(UPLOAD_FOLDER+'/'+file.filename, 'rb')
+        requests.post(line, files = {'file':filee})
+        filee.close()
 
     try:
     	os.remove(UPLOAD_FOLDER+'/'+file.filename)
@@ -30,4 +31,4 @@ def upload_file():
     return 'ok'
     
 if __name__ == '__main__':
-	app.run(debug=True, host = '192.168.43.179', port = '5000' )
+	app.run(debug = True, host = socket.gethostbyname(hostname),  port = 5000)

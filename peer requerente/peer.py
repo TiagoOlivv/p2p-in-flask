@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, send_from_directory
 from werkzeug.utils import secure_filename
 import socket
-import random
 import os
 import string
 import requests
-import time
 
 app = Flask(__name__)
 hostname = socket.gethostname()
@@ -51,6 +49,4 @@ def index():
 	return render_template('index.html')
 
 if __name__ == '__main__':
-   # app.run(debug = True, host = socket.gethostbyname(hostname),  port = 40000)
-   app.run(debug = True, host = '192.168.43.21',  port = 5001)
-
+   app.run(debug = True, host = socket.gethostbyname(hostname),  port = 5001)
