@@ -4,6 +4,7 @@ import socket
 import os
 import string
 import requests
+import glob
 
 UPLOAD_FOLDER = "uploads"
 app = Flask(__name__)
@@ -14,9 +15,21 @@ hostname = socket.gethostname()
 def upload():
     file = request.files['file']   
     filename = secure_filename(str(file))
-    file.save(os.path.join(app.config['uploads'], filename[12:-5]))
+    file.save(os.path.join(app.config['uploads'], filename[13:-5]))
     return 'ok'
+
+@app.route('/download', methods = ['GET', 'POST'])
+def download():
+    file = request.data    
+    values = glob.glob('uploads/*')
+    cont = 0
+    for line in values:
+        if(line[8:] == file.decode('utf-8')):
+        	cont = 1
     
+    requests.post('http://192.168.43.179:5000/download1',data = str(cont))
+    
+    return 'deu certo'
 # @app.route('/download', methods = ['GET', 'POST'])
 # def download():
 #     file = request.files['file']    

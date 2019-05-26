@@ -11,42 +11,50 @@ UPLOAD_PATH = "uploads"
 
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
-	if request.method == 'POST':
-		f = request.files['file']
-		files = {'file':f}
-		upload_path = os.path.join(UPLOAD_PATH)
-		f.save(os.path.join(upload_path, secure_filename(f.filename)))
+    if request.method == 'POST':
+        f = request.files['file']
+        files = {'file':f}
+        upload_path = os.path.join(UPLOAD_PATH)
+        f.save(os.path.join(upload_path, secure_filename(f.filename)))
 
-		filee = open(UPLOAD_PATH+'/'+f.filename, "rb")
-		
-		requests.post('http://192.168.43.179:5000/', files = {'file':filee})
-		
-		return 'Arquivo enviado com sucesso, entre com o seu nome e extensão para poder baixa-lo.'
-	else:
-	   return render_template('upload.html')
-	   code = request.form['file_code']
+        filee = open(upload_path+'/'+f.filename, "rb")
+        
+        requests.post('http://192.168.0.136:5000/', files = {'file':filee})
 
-# @app.route('/download', methods = ['GET', 'POST'])
-# def download():
-#     if request.method == 'POST':
-#         code = request.form['file_code']
-#         folder = os.path.join(UPLOAD_PATH)
+        filee.close()
 
-#         if not os.path.isdir (folder):
-#             return "error: Nome indisponível"
-#         files = os.listdir(folder)
+        os.remove(upload_path+'/'+f.filename)     
+        
+        filee.close()
+        return 'Arquivo enviado com sucesso, entre com o seu nome e extensão para poder baixa-lo.'
+    else:
+       return render_template('upload.html')
 
-#         if len(files) < 1:
-#             return "error: Arquivo indisponível"
+@app.route('/download', methods = ['GET', 'POST'])
+def download():
+    if request.method == 'POST':
+        code = request.form['file_code']
+        b = (str(code))
+        requests.post('http://192.168.43.179:5000/download', data = b)
+        
+        # folder = os.path.join(UPLOAD_PATH)
 
-#         return send_from_directory(directory=folder, filename=code, as_attachment = True)
-		
-#     else:
-#         return render_template('download.html')
+        # if not os.path.lisdir(folder):
+        #     return "error: Nome indisponível"
+        # files = os.listdir(folder)
+
+        # if len(files) < 1:
+        #     return "error: Arquivo indisponível"
+
+        #return send_from_directory(directory=folder, filename=code, as_attachment = True)
+        return 'Download realizado com sucesso'
+
+    else:
+        return render_template('download.html')
 
 @app.route('/', methods = ['GET'])
 def index():
-	return render_template('index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
    app.run(debug = True, host = socket.gethostbyname(hostname),  port = 5001)
