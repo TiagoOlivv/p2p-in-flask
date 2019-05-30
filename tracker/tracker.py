@@ -1,33 +1,48 @@
-import os, json
-from flask import Flask, request, redirect, url_for, send_from_directory
-from werkzeug import secure_filename
-import requests
+from flask import Flask, render_template, request, send_from_directory
+from werkzeug.utils import secure_filename
 import socket
-import time
+import os
+import requests
 
-hostname = socket.gethostname()
-UPLOAD_FOLDER = 'uploads'
 app = Flask(__name__)
-app.config['uploads'] = UPLOAD_FOLDER
+hostname = socket.gethostname()
 
-@app.route('/', methods=['GET', 'POST'])
-def upload():
-    file = request.files['file']
-    filename = secure_filename(str(file))
-    file.save(os.path.join(app.config[UPLOAD_FOLDER], filename[12:-5])) 
-    
-    ips = open('ips.txt', 'r') 
-    for line in ips:
-        filee = open(UPLOAD_FOLDER+'/'+file.filename, 'rb')
-        requests.post(line, files = {'file':filee})
-        filee.close()
+@app.route('/torrent', methods = ['GET', 'POST'])
+def torrent():
+	name_archive = request.data
+	print("Tracker recebeu: ",name_archive)
 
-    try:
-        os.remove(UPLOAD_FOLDER+'/'+file.filename)
-    except:
-        print('Error ao deletar arquivo.')
-    
-    return 'ok'
-    
+	ips = ['http://192.168.0.4:5002/verifica','http://192.168.0.4:5003/verifica']
+	
+	for line in ips:
+		requests.post(line,data = name_archive)
+
+	return 'enviado'
+
+@app.route('/recebeTorrent', methods = ['GET', 'POST'])
+def recebeTorrent():
+	file = open('file.torrent','rb').read()
+	requests.post('http://192.168.0.4:5001/recebeTorrentPR',files = {'file':file})
+	
+	try:
+		os.remove('file.torrent')
+	except:
+		print('Error ao deletar arquivo.')
+
+	return 'ok'
+
+@app.route('/resposta', methods = ['GET', 'POST'])
+def resposta():
+	resposta = request.data
+	escreve(resposta)
+	return 'enviado'
+
+def escreve(nome):
+	arq = open('file.torrent', 'a+')
+	if(nome.decode('utf-8') != 'false'):
+		arq.write(nome.decode('utf-8')) 
+		arq.write('\n')
+	arq.close()
+
 if __name__ == '__main__':
-    app.run(debug = True, host = socket.gethostbyname(hostname),  port = 5000)
+   app.run(debug = True, host = socket.gethostbyname(hostname),  port = 5000)
