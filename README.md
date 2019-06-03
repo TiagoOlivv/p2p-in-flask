@@ -8,7 +8,7 @@ Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores indepe
 
 
 
-# Cluster
+# Rede (P2P)
 ### O que é cluster?
 Cluster (ou clustering) é, em poucas palavras, o nome dado a um sistema que relaciona dois ou mais computadores para que estes trabalhem de maneira conjunta no intuito de processar uma tarefa. Estas máquinas dividem entre si as atividades de processamento e executam este trabalho de maneira simultânea.
 
@@ -18,8 +18,7 @@ Os nós do cluster devem ser interconectados, preferencialmente, por uma tecnolo
 
 [Infowester](https://www.infowester.com/cluster.php)
 
-# Cluster Beowulf
-
+# Rede (P2P) para compartilhamento de arquivos com o conceito de Torrent de forma simplificada
 O Beowulf não é, necessariamente, um middleware, como muitos pensam. Na verdade, este nome faz referência a um padrão de clustering disponibilizado pela NASA (National Aeronautics and Space) em 1994 e amplamente adotado desde então.
 
 Originalmente, Beowulf é o nome de um poema extenso e bastante antigo, cujo manuscrito foi encontrado no século XI. A obra descreve os atos de um herói de mesmo nome que se destaca por sua força descomunal e que, portanto, enfrenta um perigoso monstro para salvar um reino. A história serviu de inspiração para que os pesquisadores Thomas Sterling e Donald Becker, da NASA, batizassem o projeto de cluster no qual trabalhavam de Beowulf.
