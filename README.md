@@ -31,7 +31,7 @@ Mas e como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc.
 ## REDE (P2P) para compartilhamento de arquivos com o conceito de Torrent  de forma simplificada
 O propósito deste presente trabalho abordando conceito de redes P2P e Torrent Arquitetura e estruturação do sistema - Cluster de processamento de texto em grandes volumes (BigData), modelo mapReduce - WordCount example.
 #### Modelo padrão mapreduce
-![academico](https://www.todaysoftmag.com/images/articles/tsm33/large/a11.png)
+![academico](img/figuraprojeto.jpg)
 #### Arquitetura mapreduce aplicado neste trabalho
 ![academico](img/mapreduce.png)
 ## Segurança
