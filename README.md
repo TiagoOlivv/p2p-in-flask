@@ -35,15 +35,9 @@ O propósito deste presente trabalho abordando conceito de redes P2P e Torrent A
 #### Arquitetura mapreduce aplicado neste trabalho
 ![academico](img/mapreduce.png)
 ## Segurança
-		
-Para gerenciar os arquivos entre cada node do cluster, será utilizado a criptpgrafia em base64¹ e um método de compactação **hash_string** para garantir segurança e menores quantidades de dados trafegando na rede via sockets, possibilitando uma comunicação mais rápida de node à node.
 
-	¹Base64 é um método para codificação de dados para transferência na Internet (codificação MIME para 
-	transferência de conteúdo). É utilizado frequentemente para transmitir dados binários por meios de
-	transmissão que lidam apenas com texto, como por exemplo para enviar arquivos anexos por e-mail.
-	[Wikipédia]- https://pt.wikipedia.org/wiki/Base64
+A segurança em uma rede peer-to-peer não é uma caracteristica predominante. Assim se sua organização tiver preocupações em matéria de segurança a decisão deve ser para algo que sua organização pode controlar (como um servidor). Uma vez que os usuários vão  necessitar fazer o compartilhamento do acesso a pastas, eles podem optar por não exigir senhas. Esta falta de hierarquia tem um impacto enorme sobre a segurança da rede e sua organização precisará de uma formação adequada para seus usuários para evitar problemas.
 
-Foi utilizado o conceito de criptografia ponto à ponto bastante conhecido graças aos mensageiros como o Whatsapp, onde a criptografia e descriptografia acontece em ambos os nós de uma conexão.
 #### Representação do sistema de criptografia utilizado no Cluster e modelo base.
 ![academico](img/cript.png)
 
