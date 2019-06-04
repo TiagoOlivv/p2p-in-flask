@@ -28,9 +28,22 @@ Mas e como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc.
 [Infowester](https://www.infowester.com/cluster.php)
 
 ## REDE (P2P) para compartilhamento de arquivos com o conceito de Torrent  de forma simplificada
-O propósito deste presente trabalho abordando conceito de redes P2P e Torrent Arquitetura e estruturação do sistema - Cluster de processamento de texto em grandes volumes (BigData), modelo mapReduce - WordCount example.
-#### Modelo padrão mapreduce
+O propósito deste presente trabalho é a abordagrm do conceito de redes P2P e Torrentcom a implementação do mesmo, seguindo as seguintes características, implementar um sistema do zero, onde um usuário poderá baixar um arquivo (que deverá ser um pdf, ou um pré-projeto de TCC) que esteja disponível em várias máquinas conectadas na rede. As máquinas da arquitetura devem ser máquinas físicas. (smartphone ou computador). Fara facilitar o entendimento, observe a seguinte figura:  
+#### Arquitetura aplicada neste trabalho
 ![academico](img/figuraprojeto.jpg)
+
+
+A arquitetura possui um servidor chamado de Tracker, que simplesmente armazena um arquivo .torrent que contêm os seguintes dados:  
+1. O nome de um arquivo a ser baixado (ex: tcc_maria_2018.pdf) 
+2. Em quais peers este arquivo está presente, 
+3. O tamanho (em número de palavras) de cada bloco do arquivo a ser baixado 
+4. Um código hash MD5 referente ao conteúdo do arquivo. O pdf não possuirá nem figuras e nem tabelas, apenas texto. Os blocos podem ser as seções padrão do documento ou o grupo pode fazer algo mais elaborado, trabalhando com outra forma de quebra do arquivo.  
+
+As etapas do processo de download são:  
+1) O peer requerente deve baixar o arquivo torrent 
+2) O peer requerente deve identificar o quão longe cada peer está para poder decidir qual bloco do arquivo pdf irá baixar daquele peer em questão. Blocos menores devem ser baixados de peeers mais distantes. Este teste de latência pode ser o resultado de um simples ping ou outra alternativa mais elaborada.
+3) Por fim, o peer requerente já com o arquivo baixado deve verificar se o arquivo está completo, através de um código hash, localizado no arquivo torrent. 
+
 #### Arquitetura mapreduce aplicado neste trabalho
 ![academico](img/mapreduce.png)
 ## Segurança
