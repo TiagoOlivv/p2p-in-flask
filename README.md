@@ -80,13 +80,13 @@ Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, lev
 ![academico](img/mestres.png)
 
 ```LateX
-@misc{mpgxc,
- title   ={A micro cluster for counting words based on the mapreduce model},
- url     ={https://github.com/mpgxc/micro_cluster},
+@misc{sdtorrent,
+ title   ={A prototype network p2p},
+ url     ={https://github.com/TiagoOlivv/prototype-network-p2p/},
  organization={AbnTeX},
- urlaccessdate={21 nov. 2018}
+ urlaccessdate={4 jun. 2019}
 }
 ```
 ```LateX
-Use \cite{mpgxc}
+Use \cite{sdtorrent}
 ```
