@@ -108,33 +108,33 @@ def arquivo():
 def zipar(arqs):
 	with zipf.ZipFile('nome.zip','w', zipf.ZIP_DEFLATED) as z:
 	    for arq in arqs:
-	        if(os.path.isfile(arq)): # se for ficheiro
+	        if(os.path.isfile(arq)): 
 	            z.write(arq)
-	        else: # se for diretorio
+	        else: 
 	            for root, dirs, files in os.walk(arq):
 	                for f in files:
 	                    z.write(os.path.join(root, f))
 
 def split(fromfile, todir, chunksize=chunksize):
-	if not os.path.exists(todir):                  # caller handles errors
-		os.mkdir(todir)                            # make dir, read/write parts
+	if not os.path.exists(todir):                 
+		os.mkdir(todir)                           
 	else:
-		for fname in os.listdir(todir):            # delete any existing files
+		for fname in os.listdir(todir):            
 			os.remove(os.path.join(todir, fname))
 	partnum = 0
 	try:
-		input = open(fromfile, 'rb')                   # use binary mode on Windows
-		while 1:                                       # eof=empty string from read
-			chunk = input.read(chunksize)              # get next part <= chunksize
+		input = open(fromfile, 'rb')                    
+		while 1:                                      
+			chunk = input.read(chunksize)              
 			if not chunk:
 				break
 			partnum = partnum+1
 			filename = os.path.join(todir, ('part%04d' % partnum))
 			fileobj = open(filename, 'wb')
 			fileobj.write(chunk)
-			fileobj.close()                            # or simply open(  ).write(  )
+			fileobj.close()                            
 		input.close()
-		assert partnum <= 9999                         # join sort fails if 5 digits
+		assert partnum <= 9999                        
 		
 	except:
 		print('arquivo não encontrado') 
