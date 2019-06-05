@@ -39,27 +39,23 @@ O propósito deste presente trabalho é a abordagrm do conceito de redes P2P e T
 As máquinas da arquitetura devem ser máquinas físicas. Fara facilitar o entendimento, observe a seguinte figura:  
 
 <p align="center">
-  <img width="560" height="400" src="img/projeto.png">
+  <img width="580" height="420" src="img/projeto.png">
 </p>
 
-#### Arquitetura aplicada neste trabalho
 
 A arquitetura possui um servidor chamado de Tracker, que simplesmente armazena um arquivo .torrent que contêm os seguintes dados:  
-1. O nome de um arquivo a ser baixado (ex: tcc_maria_2018.pdf) 
-2. Em quais peers este arquivo está presente, 
-3. O tamanho (em número de palavras) de cada bloco do arquivo a ser baixado 
-4. Um código hash MD5 referente ao conteúdo do arquivo. O pdf não possuirá nem figuras e nem tabelas, apenas texto. Os blocos podem ser as seções padrão do documento ou o grupo pode fazer algo mais elaborado, trabalhando com outra forma de quebra do arquivo.  
+1. O nome de um arquivo a ser baixado (ex: arquivo.pdf);
+2. Em quais peers este arquivo está presente;
+3. O número blocos em que o arquivo foi divido do arquivo para ser baixado;
+4. Um código hash MD5 referente ao conteúdo do arquivo. 
 
 As etapas do processo de download são:  
-1) O peer requerente deve baixar o arquivo torrent 
-2) O peer requerente deve identificar o quão longe cada peer está para poder decidir qual bloco do arquivo pdf irá baixar daquele peer em questão. Blocos menores devem ser baixados de peeers mais distantes. Este teste de latência pode ser o resultado de um simples ping ou outra alternativa mais elaborada.
-3) Por fim, o peer requerente já com o arquivo baixado deve verificar se o arquivo está completo, através de um código hash, localizado no arquivo torrent. 
+1. O peer requerente baixa o arquivo torrent; 
+2. O peer requerente identifica o quão longe está cada peer, para poder decidir quantas partes do arquivo solicitado irá baixar daquele peer em questão. Menores quantidades são baixados de peeers mais distantes. A distância do peer requerente para os peers é medida a partir de um teste de latência (tempo que leva para um pacote de dados ir de um ponto designado para o outro).
+3. Por fim, o peer requerente já com o arquivo baixado verifica a integridade do arquivo, através de um código hash, localizado no arquivo torrent. 
 
 #### Arquitetura "" aplicado neste trabalho
 ![academico](img/.png)
-## Segurança
-
-A segurança em uma rede peer-to-peer não é uma caracteristica predominante. Assim se sua organização tiver preocupações em matéria de segurança a decisão deve ser para algo que sua organização pode controlar (como um servidor). Uma vez que os usuários vão  necessitar fazer o compartilhamento do acesso a pastas, eles podem optar por não exigir senhas. Esta falta de hierarquia tem um impacto enorme sobre a segurança da rede e sua organização precisará de uma formação adequada para seus usuários para evitar problemas.
 
 #### Representação do sistema "" e modelo base.
 ![academico](img/.png)
