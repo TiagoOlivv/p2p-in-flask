@@ -65,11 +65,11 @@ Um contador de palavras pode ser útil para quem precisa escrever um texto que t
 Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, levando em consideração as três palavras dadas como entrada para que sejam buscadas, retornando o seu respectivo número de aparições no texto.
 
 ## Telas:
-##### Tela Master - Home.
+##### Tela Requerente - Home.
 ![academico](gui/home.jpeg)
-##### Tela Master > Upload de arquivos.
+##### Tela Requerente > Upload de arquivos.
 ![academico](gui/upload.jpeg)
-##### Tela Master > Download dos arquivos.
+##### Tela Requerente > Download dos arquivos.
 ![academico](gui/download.jpeg)
 
 
