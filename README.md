@@ -9,10 +9,10 @@
 - Redes Sociais e plataformas idênticas
 
 # Rede peer-to-peer (P2P)
-### O Que é P2P?
+<strong>O Que é P2P?</strong><br/>
 <p>P2P significa Peer to Peer e o 2 da sigla é um trocadilho com a palavra to ("para" em inglês), já em português, significa "par a par". O nome se refere ao formato à disposição dos computadores interligados à rede, onde cada computador conectado realiza as funções de cliente e servidor ao mesmo tempo, dessa forma, tudo é descentralizado, sem um único servidor centralizado que detenha o arquivo e precisa se encarregar de enviar todos os milhares de pedidos ao mesmo tempo.
 
-### Ficou complicado entender o que é cliente e servidor? <br/>
+<strong>Ficou complicado entender o que é cliente e servidor? </strong><br/>
 Cliente é o nome dado ao pc que pede algo à rede, e servidor aquele que envia o pedido. <br/>
 Como não existe um servidor dedicado, veja que nenhum servidor de torrent armazena sequer um arquivo, os arquivos estão em máquinas em qualquer local do mundo. Não há uma única fonte para o seu download (como acontece quando você baixa algo de um site), há milhões de fontes só esperando sua conexão.
 </p>
@@ -28,7 +28,7 @@ O que torna a rede P2P eficiente é que você pode começar a baixar de uma font
 ## Arquitetura geral de uma Rede P2P
 ![academico](img/p2p.png)
 
-Como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc. não dá erro? <br/> 
+<strong>Como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc. não dá erro?</strong> <br/> 
 Não, pois neste tipo de conexão, os arquivos a serem transferidos são divididos em pequenos pedaços e então compartilhados. Os pedaços são sempre os mesmos para a música X, ou jogo Y. <br/>
 
 Funciona assim: Você baixa um desses pedaços de arquivo e, logo após, você imediatamente passa a distribuí-lo aos outros usuários que estão fazendo o download do mesmo arquivo. Assim, evitam-se gargalos na transmissão dos dados e permite que mesmo aquela pessoa com uma conexão lenta de transferência consiga repassar o arquivo para milhares de pessoas. 
