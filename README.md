@@ -62,6 +62,21 @@ As etapas do processo de download são:
 ##### Tela Requerente > Download dos arquivos.
 ![academico](gui/download.jpeg)
 
+### Representação da função de quebra do arquivo em bytes (split e join) </br>
+<p align="center">
+  <img width="580" height="420" src="img/split_join.png">
+</p>
+
+### Representação da função de verificação da integridade do arquivo (hash) </br>
+<p align="center">
+  <img width="580" height="420" src="img/hash.png">
+</p>
+
+# Arquitetura geral do Sistema P2P proposto
+<p align="center">
+  <img width="580" height="420" src="img/arquitetura.png">
+</p>
+
 
 ```LateX
 @misc{prototypep2p,
