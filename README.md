@@ -30,13 +30,19 @@ O que torna a rede P2P eficiente é que você pode começar a baixar de uma font
 <strong>Como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc. não dá erro?</strong> <br/> 
 Não, pois neste tipo de conexão, os arquivos a serem transferidos são divididos em pequenos pedaços e então compartilhados. Os pedaços são sempre os mesmos para a música X, ou jogo Y. <br/>
 
-Funciona assim: Você baixa um desses pedaços de arquivo e, logo após, você imediatamente passa a distribuí-lo aos outros usuários que estão fazendo o download do mesmo arquivo. Assim, evitam-se gargalos na transmissão dos dados e permite que mesmo aquela pessoa com uma conexão lenta de transferência consiga repassar o arquivo para milhares de pessoas. 
+<strong>Funcionamento:</strong> Você baixa um desses pedaços de arquivo e, logo após, você imediatamente passa a distribuí-lo aos outros usuários que estão fazendo o download do mesmo arquivo. Assim, evitam-se gargalos na transmissão dos dados e permite que mesmo aquela pessoa com uma conexão lenta de transferência consiga repassar o arquivo para milhares de pessoas. 
 [Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
 
-## REDE (P2P) para compartilhamento de arquivos com o conceito de Torrent  de forma simplificada
-O propósito deste presente trabalho é a abordagrm do conceito de redes P2P e Torrentcom a implementação do mesmo, seguindo as seguintes características, implementar um sistema do zero, onde um usuário poderá baixar um arquivo (que deverá ser um pdf, ou um pré-projeto de TCC) que esteja disponível em várias máquinas conectadas na rede. As máquinas da arquitetura devem ser máquinas físicas. (smartphone ou computador). Fara facilitar o entendimento, observe a seguinte figura:  
+# Rede P2P para compartilhamento de arquivos abordada no seguinte trabalho  
+O propósito deste presente trabalho é a abordagrm do conceito de redes P2P e Torrent com a implementação do mesmo, seguindo as seguintes características:
+- Implementação de um sistema, onde um usuário poderá baixar um arquivo que esteja disponível em várias máquinas conectadas na rede. 
+As máquinas da arquitetura devem ser máquinas físicas. Fara facilitar o entendimento, observe a seguinte figura:  
+
+<p align="center">
+  <img width="560" height="400" src="img/figuraprojeto.jpg">
+</p>
+
 #### Arquitetura aplicada neste trabalho
-![academico](img/figuraprojeto.jpg)
 
 A arquitetura possui um servidor chamado de Tracker, que simplesmente armazena um arquivo .torrent que contêm os seguintes dados:  
 1. O nome de um arquivo a ser baixado (ex: tcc_maria_2018.pdf) 
