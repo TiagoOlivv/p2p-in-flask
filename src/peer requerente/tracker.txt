@@ -1,1 +1,2 @@
-http://192.168.0.4:5000
+<Entre com o IP e a Porta do tracker aqui>
+ex: http://<ip>:<porta>
