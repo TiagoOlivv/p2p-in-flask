@@ -16,7 +16,7 @@ Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores indepe
 
 </p>P2P significa Peer to Peer e o 2 da sigla é um trocadilho com a palavra to ("para" em inglês), já em português, significa "par a par". O nome se refere ao formato à disposição dos computadores interligados à rede, onde cada computador conectado realiza as funções de cliente e servidor ao mesmo tempo, dessa forma, tudo é descentralizado, sem um único servidor centralizado que detenha o arquivo e precisa se encarregar de enviar todos os milhares de pedidos ao mesmo tempo.</p>
 
-[oficinadanet](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
+[Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
 
 # Rede (P2P) para compartilhamento de arquivos com o conceito de Torrent 
 Acontece como cliente e servidor, no caso o Cliente é o nome dado ao pc que pede algo à rede, e servidor aquele que envia o pedido. Como não existe um servidor dedicado, veja que nenhum servidor de torrent armazena sequer um arquivinho, os arquivos estão na sua máquina, na minha, na do seu vizinho, enfim, em qualquer local do mundo. Aqui está a genialidade deste tipo de conexão: Não há uma única fonte para o seu download (como acontece quando você baixa algo de um site), há milhões de fontes só esperando sua conexão.
