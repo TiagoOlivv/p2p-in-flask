@@ -12,7 +12,7 @@ Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores indepe
 
 
 # Rede (P2P)
-### O que é P2P?
+### O Que é P2P?
 
 <p>P2P significa Peer to Peer e o 2 da sigla é um trocadilho com a palavra to ("para" em inglês), já em português, significa "par a par". O nome se refere ao formato à disposição dos computadores interligados à rede, onde cada computador conectado realiza as funções de cliente e servidor ao mesmo tempo, dessa forma, tudo é descentralizado, sem um único servidor centralizado que detenha o arquivo e precisa se encarregar de enviar todos os milhares de pedidos ao mesmo tempo.</p>
 
