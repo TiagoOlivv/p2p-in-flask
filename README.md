@@ -44,46 +44,37 @@ As etapas do processo de download são:
 2) O peer requerente deve identificar o quão longe cada peer está para poder decidir qual bloco do arquivo pdf irá baixar daquele peer em questão. Blocos menores devem ser baixados de peeers mais distantes. Este teste de latência pode ser o resultado de um simples ping ou outra alternativa mais elaborada.
 3) Por fim, o peer requerente já com o arquivo baixado deve verificar se o arquivo está completo, através de um código hash, localizado no arquivo torrent. 
 
-#### Arquitetura mapreduce aplicado neste trabalho
-![academico](img/mapreduce.png)
+#### Arquitetura "" aplicado neste trabalho
+![academico](img/.png)
 ## Segurança
 
 A segurança em uma rede peer-to-peer não é uma caracteristica predominante. Assim se sua organização tiver preocupações em matéria de segurança a decisão deve ser para algo que sua organização pode controlar (como um servidor). Uma vez que os usuários vão  necessitar fazer o compartilhamento do acesso a pastas, eles podem optar por não exigir senhas. Esta falta de hierarquia tem um impacto enorme sobre a segurança da rede e sua organização precisará de uma formação adequada para seus usuários para evitar problemas.
 
-#### Representação do sistema de criptografia utilizado no Cluster e modelo base.
-![academico](img/cript.png)
+#### Representação do sistema "" e modelo base.
+![academico](img/.png)
 
-## Arquitetura geral do Sistema Cluster
-![academico](img/main.png)
+## Arquitetura geral do Sistema Torrent
+![academico](img/.png)
 
-## Contador de palavras
+## quebra de  Blocos menores   teste de latência pode ser o resultado de um simples ping ou outra alternativa mais elaborada.já com o arquivo baixado deve verificar se o arquivo está completo, através de um código hash
+
 Como foi requisitado no trabalho, foi feita a implementação de algoritmo contador de palavras tendo como parametros de entrada, três palavras que serão buscadas a partir de um arquivo de texto.
 
 Um contador de palavras pode ser útil para quem precisa escrever um texto que terá um limite de caracteres, ou quando se escreve um texto com um número de palavras ou caracteres específicos. Ele tem como alvo uma ampla gama de usuários: de estudante para profissional de SEO, jornalista ou escritor, o gerente da comunidade, o pesquisador ... Esses perfis podem precisar de uma calculadora para contar o número de parágrafos, frases, palavras ou letras em seus escritos, teses, mensagem, artigo ou texto.
 
 Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, levando em consideração as três palavras dadas como entrada para que sejam buscadas, retornando o seu respectivo número de aparições no texto.
 
-
-#### Tempos de Execução * Teste Simples.
-- 1 - Node: 4.00460786199983 sec
-- 2 - Node: 2.0028634170012083 sec
-
 ## Telas:
-##### Tela Master - Sem cadastro.
+##### Tela Master - Home.
 ![academico](img/1.jpeg)
-##### Tela Master > Cadastrar Nodes/Slaves.
+##### Tela Master > Upload de arquivos.
 ![academico](img/2.jpeg)
-##### Tela Master > Remover Nodes/Slaves.
+##### Tela Master > Pesquisa e Download dos arquivos.
 ![academico](img/3.jpeg)
-##### Tela Master - Com cadastro.
-![academico](gui/4.png)
-##### Tela Cliente > Efetuando Query.
-![academico](gui/5.png)
-##### Tela Cliente/Resultados > Retorno das ocorrências
-![academico](gui/6.png)
+
 
 ## Acknowledgements:
-![academico](img/mestres.png)
+![academico](img/.png)
 
 ```LateX
 @misc{sdtorrent,
