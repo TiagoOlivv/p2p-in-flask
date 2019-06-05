@@ -54,10 +54,11 @@ As etapas do processo de download são:
 2. O peer requerente identifica o quão longe está cada peer, para poder decidir quantas partes do arquivo solicitado irá baixar daquele peer em questão. Menores quantidades são baixados de peeers mais distantes. A distância do peer requerente para os peers é medida a partir de um teste de latência (tempo que leva para um pacote de dados ir de um ponto designado para o outro);
 3. Por fim, o peer requerente já com o arquivo baixado verifica a integridade do arquivo, através de um código hash, localizado no arquivo torrent. 
 
-## hash para verificar a integridade
-Função ping para o peer requerente deve identificar o quão longe cada peer está para poder decidir qual bloco do arquivo pdf irá baixar daquele peer em questão. Este teste de latência pode ser o resultado de um simples ping como mostrado abaixo:
-a = requests.head
-print(a.elapsed)
+<strong>Representação da função de quebra do arquivo em bytes (split e join)</strong>
+![academico](img/split_join.png)
+
+<strong>Representação da função de verificação da integridade do arquivo(hash)</strong>
+![academico](img/hash.png)
 
 # Arquitetura geral do Sistema P2P proposto
 ![academico](img/arquitetura.png)
