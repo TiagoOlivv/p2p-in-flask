@@ -66,24 +66,24 @@ Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, lev
 
 ## Telas:
 ##### Tela Master - Home.
-![academico](img/1.jpeg)
+![academico](gui/home.jpeg)
 ##### Tela Master > Upload de arquivos.
-![academico](img/2.jpeg)
-##### Tela Master > Pesquisa e Download dos arquivos.
-![academico](img/3.jpeg)
+![academico](gui/upload.jpeg)
+##### Tela Master > Download dos arquivos.
+![academico](gui/download.jpeg)
 
 
 ## Acknowledgements:
 ![academico](img/.png)
 
 ```LateX
-@misc{sdtorrent,
- title   ={A prototype network p2p},
- url     ={https://github.com/TiagoOlivv/prototype-network-p2p/},
+@misc{prototypep2p,
+ title   = {A prototype network p2p},
+ url     = {https://github.com/TiagoOlivv/prototype-network-p2p/},
  organization={AbnTeX},
  urlaccessdate={4 jun. 2019}
 }
 ```
 ```LateX
-Use \cite{sdtorrent}
+Use \cite{prototypep2p}
 ```
