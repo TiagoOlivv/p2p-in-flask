@@ -39,7 +39,7 @@ O propósito deste presente trabalho é a abordagrm do conceito de redes P2P e T
 As máquinas da arquitetura devem ser máquinas físicas. Fara facilitar o entendimento, observe a seguinte figura:  
 
 <p align="center">
-  <img width="560" height="400" src="img/figuraprojeto.jpg">
+  <img width="560" height="400" src="img/projeto.png">
 </p>
 
 #### Arquitetura aplicada neste trabalho
