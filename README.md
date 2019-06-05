@@ -1,6 +1,5 @@
 # Sistemas Distribuídos
-<p>
-Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores independentes entre si, e até diferentes, ligados através de uma rede de dados, que se apresentam aos utilizadores como um sistema único e coerente.
+<p>Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores independentes entre si, e até diferentes, ligados através de uma rede de dados, que se apresentam aos utilizadores como um sistema único e coerente.
 </p>
 
 ## Exemplos:
@@ -9,11 +8,8 @@ Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores indepe
 - Jogos Online
 - Redes Sociais e plataformas idênticas
 
-
-
-# Rede (P2P)
+# Rede peer-to-peer (P2P)
 ### O Que é P2P?
-
 <p>P2P significa Peer to Peer e o 2 da sigla é um trocadilho com a palavra to ("para" em inglês), já em português, significa "par a par". O nome se refere ao formato à disposição dos computadores interligados à rede, onde cada computador conectado realiza as funções de cliente e servidor ao mesmo tempo, dessa forma, tudo é descentralizado, sem um único servidor centralizado que detenha o arquivo e precisa se encarregar de enviar todos os milhares de pedidos ao mesmo tempo.
 
 ### Ficou complicado entender o que é cliente e servidor? <br/>
@@ -28,6 +24,7 @@ Como não existe um servidor dedicado, veja que nenhum servidor de torrent armaz
 
 O serviço P2P cria uma rede virtual entre as máquinas conectadas no momento e vasculha o HD do usuário atrás da música, vídeo ou qualquer outro documento que a pessoa esteja baixando.
  o que torna a rede P2P tão eficiente é que você pode começar a baixar de uma fonte, e no momento em que esta fonte desligar sua máquina e interromper a conexão, o download recomeçará de onde parou, a partir dos dados cedidos por um outro usuário, se este novo usuário também desconectar, o processo se repetirá, ad eternum, até você completar o download
+  
 ## Arquitetura geral de uma rede P2P
 ![academico](img/p2p.jpg)
 
@@ -38,7 +35,6 @@ Mas e como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc.
 O propósito deste presente trabalho é a abordagrm do conceito de redes P2P e Torrentcom a implementação do mesmo, seguindo as seguintes características, implementar um sistema do zero, onde um usuário poderá baixar um arquivo (que deverá ser um pdf, ou um pré-projeto de TCC) que esteja disponível em várias máquinas conectadas na rede. As máquinas da arquitetura devem ser máquinas físicas. (smartphone ou computador). Fara facilitar o entendimento, observe a seguinte figura:  
 #### Arquitetura aplicada neste trabalho
 ![academico](img/figuraprojeto.jpg)
-
 
 A arquitetura possui um servidor chamado de Tracker, que simplesmente armazena um arquivo .torrent que contêm os seguintes dados:  
 1. O nome de um arquivo a ser baixado (ex: tcc_maria_2018.pdf) 
