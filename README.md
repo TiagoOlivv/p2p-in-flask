@@ -70,11 +70,11 @@ Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, lev
 
 ## Telas:
 ##### Tela Master - Sem cadastro.
-![academico](gui/1.png)
+![academico](gui/1.jpeg)
 ##### Tela Master > Cadastrar Nodes/Slaves.
-![academico](gui/2.png)
+![academico](gui/2.jpeg)
 ##### Tela Master > Remover Nodes/Slaves.
-![academico](gui/3.png)
+![academico](gui/3.jpeg)
 ##### Tela Master - Com cadastro.
 ![academico](gui/4.png)
 ##### Tela Cliente > Efetuando Query.
