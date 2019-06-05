@@ -73,8 +73,7 @@ Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, lev
 ![academico](gui/download.jpeg)
 
 
-## Acknowledgements:
-![academico](img/.png)
+## Bibliografia:
 
 ```LateX
 @misc{prototypep2p,
