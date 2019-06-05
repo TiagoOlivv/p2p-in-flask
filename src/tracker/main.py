@@ -30,8 +30,8 @@ def upload():
 
 @app.route('/torrent', methods = ['GET', 'POST'])
 def torrent():
-	if os.path.exists('file.torrent'):
-		os.remove('file.torrent')
+	# if os.path.exists('file.torrent'):
+	os.remove('file.torrent')
 
 	arq = open('file.torrent', 'w+')
 	arq.close()

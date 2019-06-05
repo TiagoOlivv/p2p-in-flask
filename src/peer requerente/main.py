@@ -154,10 +154,20 @@ def recebeZip():
 				hash_code = hasher.hexdigest()
 	except:
 		print("deu erro")
+	
+	with open('uploads/file.torrent') as file:
+		dump = file.read()
+		dump = dump.splitlines()
+	
+	hashcode2 = dump[1]
 
-	hashcode2 = open('uploads/file.torrent','r')
-	if(hash_code == hash_code):
+	print(hash_code)
+	print(hashcode2)
+
+	if(hash_code == hashcode2):
 		print('=========== Arquivo integro ===========')
+	else:
+		print('=========== Arquivo corrompido ===========')
 	
 	shutil.move(nomee, "downloads/"+nomee)
 	os.remove('downloads/nome.zip')

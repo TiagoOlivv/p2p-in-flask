@@ -1,2 +1,1 @@
-<Entre com o IP e a Porta do peer requerente aqui>
-ex: http://<ip>:<porta>
+http://192.168.0.2:5001
