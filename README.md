@@ -54,14 +54,20 @@ As etapas do processo de download são:
 2. O peer requerente identifica o quão longe está cada peer, para poder decidir quantas partes do arquivo solicitado irá baixar daquele peer em questão. Menores quantidades são baixados de peeers mais distantes. A distância do peer requerente para os peers é medida a partir de um teste de latência (tempo que leva para um pacote de dados ir de um ponto designado para o outro);
 3. Por fim, o peer requerente já com o arquivo baixado verifica a integridade do arquivo, através de um código hash, localizado no arquivo torrent. 
 
-<strong>Representação da função de quebra do arquivo em bytes (split e join)</strong>
-![academico](img/split_join.png)
+<strong>Representação da função de quebra do arquivo em bytes (split e join)</strong> </br>
+<p align="center">
+  <img width="580" height="420" src="img/split_join.png">
+</p>
 
-<strong>Representação da função de verificação da integridade do arquivo(hash)</strong>
-![academico](img/hash.png)
+<strong>Representação da função de verificação da integridade do arquivo(hash)</strong> </br>
+<p align="center">
+  <img width="580" height="420" src="img/hash.png">
+</p>
 
 # Arquitetura geral do Sistema P2P proposto
-![academico](img/arquitetura.png)
+<p align="center">
+  <img width="580" height="420" src="img/arquitetura.png">
+</p>
 
 # Telas:
 ##### Tela Requerente - Home.
