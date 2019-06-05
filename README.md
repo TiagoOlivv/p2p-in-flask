@@ -27,7 +27,7 @@ O que torna a rede P2P eficiente é que você pode começar a baixar de uma font
 
 # Arquitetura geral de uma Rede P2P
 <p align="center">
-  <img width="480" height="320" src="img/p2p.png">
+  <img width="560" height="400" src="img/p2p.png">
 </p>
 
 <strong>Como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc. não dá erro?</strong> <br/> 
