@@ -25,8 +25,10 @@ O serviço P2P cria uma rede virtual entre as máquinas conectadas no momento e 
 O que torna a rede P2P eficiente é que você pode começar a baixar de uma fonte, e no momento em que esta fonte desligar sua máquina e interromper a conexão, o download recomeçará de onde parou, a partir dos dados cedidos por um outro usuário, se este novo usuário também desconectar, o processo se repetirá, <em>ad eternum </em> (pra sempre), até você completar o download
 [Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
 
-## Arquitetura geral de uma Rede P2P
-![academico](img/p2p.png)
+# Arquitetura geral de uma Rede P2P
+<p align="center">
+  <img width="480" height="320" src="img/p2p.png">
+</p>
 
 <strong>Como funciona essa coisa de baixar um pouco de um, um pouco de outro, etc. não dá erro?</strong> <br/> 
 Não, pois neste tipo de conexão, os arquivos a serem transferidos são divididos em pequenos pedaços e então compartilhados. Os pedaços são sempre os mesmos para a música X, ou jogo Y. <br/>
