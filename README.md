@@ -2,11 +2,11 @@
 <p>Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores independentes entre si, e até diferentes, ligados através de uma rede de dados, que se apresentam aos utilizadores como um sistema único e coerente.
 </p>
 
-## Exemplos:
-- Sistemas de pesquisas (motores de busca)
-- Sistemas financeiros
-- Jogos Online
-- Redes Sociais e plataformas idênticas
+<strong>Exemplos:</strong>
+- Sistemas de pesquisas (motores de busca);
+- Sistemas financeiros;
+- Jogos Online;
+- Redes Sociais e plataformas idênticas.
 
 # Rede peer-to-peer (P2P)
 <strong>O Que é P2P?</strong><br/>
@@ -20,7 +20,7 @@ Como não existe um servidor dedicado, veja que nenhum servidor de torrent armaz
 # Rede P2P para compartilhamento de arquivos
 O serviço P2P cria uma rede virtual entre as máquinas conectadas no momento e vasculha o HD do usuário atrás da música, vídeo ou qualquer outro documento que a pessoa esteja baixando.<br/>
 
-O que torna a rede P2P eficiente é que você pode começar a baixar de uma fonte, e no momento em que esta fonte desligar sua máquina e interromper a conexão, o download recomeçará de onde parou, a partir dos dados cedidos por um outro usuário, se este novo usuário também desconectar, o processo se repetirá, <em>ad eternum </em> (pra sempre), até você completar o download [Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
+O que torna a rede P2P eficiente é que você pode começar a baixar de uma fonte, e no momento em que esta fonte desligar sua máquina e interromper a conexão, o download recomeçará de onde parou, a partir dos dados cedidos por um outro usuário, se este novo usuário também desconectar, o processo se repetirá, <em>ad eternum </em> (pra sempre), até você completar o download. [Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
 
 # Arquitetura geral de uma Rede P2P
 <p align="center">
@@ -51,7 +51,7 @@ A arquitetura possui um servidor chamado de Tracker, que simplesmente armazena u
 
 As etapas do processo de download são:  
 1. O peer requerente baixa o arquivo torrent; 
-2. O peer requerente identifica o quão longe está cada peer, para poder decidir quantas partes do arquivo solicitado irá baixar daquele peer em questão. Menores quantidades são baixados de peeers mais distantes. A distância do peer requerente para os peers é medida a partir de um teste de latência (tempo que leva para um pacote de dados ir de um ponto designado para o outro).
+2. O peer requerente identifica o quão longe está cada peer, para poder decidir quantas partes do arquivo solicitado irá baixar daquele peer em questão. Menores quantidades são baixados de peeers mais distantes. A distância do peer requerente para os peers é medida a partir de um teste de latência (tempo que leva para um pacote de dados ir de um ponto designado para o outro);
 3. Por fim, o peer requerente já com o arquivo baixado verifica a integridade do arquivo, através de um código hash, localizado no arquivo torrent. 
 
 #### Arquitetura "" aplicado neste trabalho
