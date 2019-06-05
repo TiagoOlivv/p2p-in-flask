@@ -60,7 +60,7 @@ a = requests.head
 print(a.elapsed)
 
 # Arquitetura geral do Sistema P2P proposto
-![academico](img/.png)
+![academico](img/arquitetura.png)
 
 # Telas:
 ##### Tela Requerente - Home.
@@ -69,9 +69,8 @@ print(a.elapsed)
 ![academico](gui/upload.jpeg)
 ##### Tela Requerente > Download dos arquivos.
 ![academico](gui/download.jpeg)
-
-
-## Bibliografia:
+##### Tela Requerente > Sobre.
+![academico](gui/sobre.jpeg)
 
 ```LateX
 @misc{prototypep2p,
