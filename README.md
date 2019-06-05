@@ -16,11 +16,6 @@ Segundo Tanenbaum, um sistema distribuído é um conjunto de computadores indepe
 
 <p>P2P significa Peer to Peer e o 2 da sigla é um trocadilho com a palavra to ("para" em inglês), já em português, significa "par a par". O nome se refere ao formato à disposição dos computadores interligados à rede, onde cada computador conectado realiza as funções de cliente e servidor ao mesmo tempo, dessa forma, tudo é descentralizado, sem um único servidor centralizado que detenha o arquivo e precisa se encarregar de enviar todos os milhares de pedidos ao mesmo tempo.</p>
 
-#### Ficou complicado entender o que é cliente e servidor? 
-<br/>
-Explicação: Cliente é o nome dado ao pc que pede algo à rede, e servidor aquele que envia o pedido. <br/>
-Como não existe um servidor dedicado, veja que nenhum servidor de torrent armazena sequer um arquivo, os arquivos estão na sua máquina, na minha, na do seu vizinho,em qualquer local do mundo. Não há uma única fonte para o seu download (como acontece quando você baixa algo de um site), há milhões de fontes só esperando sua conexão.
-
 [Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
 
 # Rede (P2P) para compartilhamento de arquivos com o conceito de Torrent 
@@ -63,13 +58,13 @@ A segurança em uma rede peer-to-peer não é uma caracteristica predominante. A
 ## Arquitetura geral do Sistema Torrent
 ![academico](img/.png)
 
-## quebra de  Blocos menores   teste de latência pode ser o resultado de um simples ping ou outra alternativa mais elaborada.já com o arquivo baixado deve verificar se o arquivo está completo, através de um código hash
+## Quebra de arquivos em blocos de bytes
 
-Como foi requisitado no trabalho, foi feita a implementação de algoritmo contador de palavras tendo como parametros de entrada, três palavras que serão buscadas a partir de um arquivo de texto.
 
-Um contador de palavras pode ser útil para quem precisa escrever um texto que terá um limite de caracteres, ou quando se escreve um texto com um número de palavras ou caracteres específicos. Ele tem como alvo uma ampla gama de usuários: de estudante para profissional de SEO, jornalista ou escritor, o gerente da comunidade, o pesquisador ... Esses perfis podem precisar de uma calculadora para contar o número de parágrafos, frases, palavras ou letras em seus escritos, teses, mensagem, artigo ou texto.
-
-Porém o enfoque desse trabalho é fazer a contagem unicamente das palavras, levando em consideração as três palavras dadas como entrada para que sejam buscadas, retornando o seu respectivo número de aparições no texto.
+## hash para verificar a integridade
+Função ping para o peer requerente deve identificar o quão longe cada peer está para poder decidir qual bloco do arquivo pdf irá baixar daquele peer em questão. Este teste de latência pode ser o resultado de um simples ping como mostrado abaixo:
+a = requests.head
+print(a.elapsed)
 
 ## Telas:
 ##### Tela Requerente - Home.
