@@ -19,7 +19,7 @@ Como não existe um servidor dedicado, veja que nenhum servidor de torrent armaz
 
 [Oficina da Net](https://www.oficinadanet.com.br/post/14046-o-que-e-p2p-e-como-ela-funciona)
 
-# Rede P2P para compartilhamento de arquivos c
+# Rede P2P para compartilhamento de arquivos
 O serviço P2P cria uma rede virtual entre as máquinas conectadas no momento e vasculha o HD do usuário atrás da música, vídeo ou qualquer outro documento que a pessoa esteja baixando.<br/>
 
 O que torna a rede P2P eficiente é que você pode começar a baixar de uma fonte, e no momento em que esta fonte desligar sua máquina e interromper a conexão, o download recomeçará de onde parou, a partir dos dados cedidos por um outro usuário, se este novo usuário também desconectar, o processo se repetirá, <em>ad eternum </em> (pra sempre), até você completar o download
