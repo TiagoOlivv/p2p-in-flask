@@ -80,14 +80,14 @@ As etapas do processo de download são:
   <img width="580" height="420" src="img/join.jpeg">
 </p>
 
-### Representação da função de verificação da integridade do arquivo (hash) </br>
+## Representação da função de verificação da integridade do arquivo (hash) </br>
 <p align="center">
-  <img width="580" height="420" src="img/hash.png">
+  <img width="580" height="420" src="img/hash.jpeg">
 </p>
 
 # Arquitetura geral do Sistema P2P proposto
 <p align="center">
-  <img width="580" height="420" src="img/arquitetura.png">
+  <img width="580" height="420" src="img/arquitetura.jpeg">
 </p>
 
 
