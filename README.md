@@ -61,16 +61,6 @@ As etapas do processo de download são:
 4. Acessar o IP e Porta em que o peer requerente está sendo executado; 
 5. enjoy.
 
-# Telas:
-##### Tela Requerente - Home.
-![academico](gui/home.jpeg)
-##### Tela Requerente > Upload de arquivos.
-![academico](gui/upload.jpeg)
-##### Tela Requerente > Download dos arquivos.
-![academico](gui/download.jpeg)
-##### Tela Requerente > Sobre.
-![academico](gui/sobre.jpeg)
-
 ## Representação da função de quebra do arquivo em bytes </br>
 <p align="center">
   <img width="580" height="420" src="img/split.jpeg">
@@ -88,6 +78,15 @@ As etapas do processo de download são:
 # Arquitetura geral do Sistema P2P proposto
 ![academico](img/arquitetura.jpeg)
 
+# Telas:
+##### Tela Requerente - Home.
+![academico](gui/home.jpeg)
+##### Tela Requerente > Upload de arquivos.
+![academico](gui/upload.jpeg)
+##### Tela Requerente > Download dos arquivos.
+![academico](gui/download.jpeg)
+##### Tela Requerente > Sobre.
+![academico](gui/sobre.jpeg)
 
 ```LateX
 @misc{prototypep2p,
