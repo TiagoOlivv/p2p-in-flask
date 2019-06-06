@@ -80,7 +80,7 @@ As etapas do processo de download são:
   <img width="580" height="420" src="img/join.jpeg">
 </p>
 
-## Representação da função de verificação da integridade do arquivo (hash) </br>
+## Representação da função de verificação da integridade do arquivo </br>
 <p align="center">
   <img width="580" height="420" src="img/hash.jpeg">
 </p>
