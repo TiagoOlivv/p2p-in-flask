@@ -54,6 +54,12 @@ As etapas do processo de download são:
 2. O peer requerente identifica o quão longe está cada peer, para poder decidir quantas partes do arquivo solicitado irá baixar daquele peer em questão. Menores quantidades são baixados de peeers mais distantes. A distância do peer requerente para os peers é medida a partir de um teste de latência (tempo que leva para um pacote de dados ir de um ponto designado para o outro);
 3. Por fim, o peer requerente já com o arquivo baixado verifica a integridade do arquivo, através de um código hash, localizado no arquivo torrent. 
 
+### Instruções de uso:
+1. instalar as bibliotecas necessárias (pip install -m requirements.txt);
+2. Executar o peer, peer requerente e o tracker;
+3. configurar os arquivos .txt de acordo com o ip e porta que os programas estão sendo executados;
+4. enjoy.
+
 # Telas:
 ##### Tela Requerente - Home.
 ![academico](gui/home.jpeg)
