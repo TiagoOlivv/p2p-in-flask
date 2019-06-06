@@ -86,9 +86,7 @@ As etapas do processo de download são:
 </p>
 
 # Arquitetura geral do Sistema P2P proposto
-<p align="center">
-  <img width="580" height="420" src="img/arquitetura.jpeg">
-</p>
+![academico](img/arquitetura.jpeg)
 
 
 ```LateX
