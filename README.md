@@ -61,6 +61,8 @@ As etapas do processo de download são:
 ![academico](gui/upload.jpeg)
 ##### Tela Requerente > Download dos arquivos.
 ![academico](gui/download.jpeg)
+##### Tela Requerente > Sobre.
+![academico](gui/sobre.jpeg)
 
 ### Representação da função de quebra do arquivo em bytes (split e join) </br>
 <p align="center">
