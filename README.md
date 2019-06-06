@@ -42,7 +42,6 @@ As máquinas da arquitetura devem ser máquinas físicas. Fara facilitar o enten
   <img width="580" height="420" src="img/projeto.png">
 </p>
 
-
 A arquitetura possui um servidor chamado de Tracker, que simplesmente armazena um arquivo .torrent que contêm os seguintes dados:  
 1. O nome de um arquivo a ser baixado (ex: arquivo.pdf);
 2. Em quais peers este arquivo está presente;
@@ -55,7 +54,8 @@ As etapas do processo de download são:
 3. Por fim, o peer requerente já com o arquivo baixado verifica a integridade do arquivo, através de um código hash, localizado no arquivo torrent. 
 
 ### Instruções de uso:
-1. instalar as bibliotecas necessárias (pip install -m requirements.txt);
+#### Aplicação feita em python 3
+1. instalar as bibliotecas necessárias (pip install -r requirements.txt);
 2. Executar o peer, peer requerente e o tracker;
 3. Configurar os arquivos .txt de acordo com o IP e porta que os programas estão sendo executados;
 4. Acessar o IP e Porta em que o peer requerente está sendo executado; 
