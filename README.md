@@ -64,9 +64,13 @@ As etapas do processo de download são:
 ##### Tela Requerente > Sobre.
 ![academico](gui/sobre.jpeg)
 
-### Representação da função de quebra do arquivo em bytes (split e join) </br>
+## Representação da função de quebra do arquivo em bytes </br>
 <p align="center">
-  <img width="580" height="420" src="img/split_join.png">
+  <img width="580" height="420" src="img/split.jpeg">
+</p>
+
+<p align="center">
+  <img width="580" height="420" src="img/join.jpeg">
 </p>
 
 ### Representação da função de verificação da integridade do arquivo (hash) </br>
