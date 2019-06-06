@@ -57,8 +57,9 @@ As etapas do processo de download são:
 ### Instruções de uso:
 1. instalar as bibliotecas necessárias (pip install -m requirements.txt);
 2. Executar o peer, peer requerente e o tracker;
-3. configurar os arquivos .txt de acordo com o ip e porta que os programas estão sendo executados;
-4. enjoy.
+3. Configurar os arquivos .txt de acordo com o IP e porta que os programas estão sendo executados;
+4. Acessar o IP e Porta em que o peer requerente está sendo executado; 
+5. enjoy.
 
 # Telas:
 ##### Tela Requerente - Home.
