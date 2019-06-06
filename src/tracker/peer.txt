@@ -1,1 +1,2 @@
-http://192.168.0.2:5002
+<Entre com o IP e a porta dos peers>
+ex: http://127.0.0.1:5000
